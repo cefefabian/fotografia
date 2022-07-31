@@ -208,6 +208,7 @@ nav ul li:hover .submenu{
 }
 
 .blog-img img{
+    background-color: #03afff;
     height: 350px;
     width: 110%;
     border: white 10px solid;
@@ -223,6 +224,7 @@ nav ul li:hover .submenu{
     height: 300px;
     width: 100%;
     border: white 10px solid;
+    background-color: #03afff;
     /* position: relative;
     right: 20%; */
 }
