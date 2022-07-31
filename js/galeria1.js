@@ -30,8 +30,8 @@ imagenes.forEach((imagen) => {
 
 
         if (tamaño2 > 250 && tamaño < 300){
-          lightbox2interno.style.height = '90%'
-          lightbox2interno.style.width = '50%'
+          // lightbox2interno.style.height = '90%'
+          lightbox2interno.style.width = '100%'
         }
         else{
           lightbox2interno.style.width = '100%'
@@ -55,7 +55,8 @@ btnfull.addEventListener('click', function() {
     if (clickCount === 1) {
         singleClickTimer = setTimeout(function() {
             clickCount = 1;
-            imagenActiva.style.width = '87.6%'
+            imagenActiva.style.width = '87.8%'
+            // imagenActiva.style.height = '100%'
             imagenActiva.style.transition = '0.7s'
         }, 100);
     } else if (clickCount === 2) {
@@ -91,7 +92,7 @@ const adelantaImagen = () => {
   imagenActiva.classList.add('avance')
   setTimeout(() => {
     imagenActiva.classList.remove('avance')
-  }, 10);
+  }, 500);
 
 };
 
@@ -108,7 +109,7 @@ const retrocederImagen = () => {
   imagenActiva.classList.add('avance')
   setTimeout(() => {
     imagenActiva.classList.remove('avance')
-  }, 10);
+  }, 500);
 };
 
 btnRetrocede.addEventListener('click', retrocederImagen);
