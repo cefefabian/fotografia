@@ -57,8 +57,7 @@ body{
     margin: auto 0;
     
 }
-
-.pp a{
+a{
     text-decoration: none;
     color: white;
 }
@@ -190,50 +189,48 @@ nav ul li:hover .submenu{
     height: 100%;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5%;
+    border-radius: 3px 0 0 0;
     background-color: #131313;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
+
     display: grid;
     grid-template-columns: 50% 50%;
     padding-right: 5%;
-    
+    transition: 1.5s;
 }
+
 .blog-img{
     margin-top: 150px;
     position: relative;
     right: 55%;
-    
-}
-
-.blog-img img{
-    background-color: #03afff;
-    height: 350px;
-    width: 110%;
+    background-image: url(../slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: white 10px solid;
-    margin: 0 auto;
+    height: 350px;
+    background-color: #03afff;
+    border-radius: 3px;
 }
 
 .blog-img2{
     margin-top: 100px;
-    
-
-}
-.blog-img2 img{
-    height: 300px;
-    width: 100%;
+    background-image: url(../slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: white 10px solid;
+    border-radius: 3px;
+    height: 300px;
     background-color: #03afff;
-    /* position: relative;
-    right: 20%; */
+
 }
 
 .blog-data{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 230px;
     margin-left: 8%;
 }
 .biografia{
@@ -256,11 +253,6 @@ nav ul li:hover .submenu{
     font-size: 29px;
     font-family: 'Raleway', sans-serif;
 }
-
-
-
-/*galerias*/
-
 
 
 /* js */
@@ -333,7 +325,7 @@ animation: slider 1.2s ease-in-out;
 }
 footer{
     position: absolute;
-    bottom: -180%;
+    bottom: -190%;
     left: 0;
     height: fit-content;
     width: 100%;
@@ -487,3 +479,6 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
         border-bottom: none;
     }
 }
+
+/* contacto */
+

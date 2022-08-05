@@ -32,7 +32,7 @@ document.addEventListener('scroll', (e) => {
   if(y == 0){
   
     div.classList.add('div-ani')
-    
+    document.querySelector('.blog').classList.remove('blog-subir')
     document.getElementById('header').classList.remove('header-fondo')
     
     document.getElementById('slider').classList.remove('desenfoco')
@@ -42,9 +42,7 @@ document.addEventListener('scroll', (e) => {
     document.getElementById('slider').classList.remove('desenfoco5')
   }
   else if(y < 100){
-    
-    div.classList.remove('div-ani')
-
+    // document.querySelector('.blog').classList.remove('blog-subir')
     document.getElementById('header').classList.remove('header-fondo')
     
     document.getElementById('slider').classList.remove('desenfoco')
@@ -52,8 +50,9 @@ document.addEventListener('scroll', (e) => {
     document.getElementById('slider').classList.remove('desenfoco3')
     document.getElementById('slider').classList.remove('desenfoco4')
     document.getElementById('slider').classList.remove('desenfoco5')
+    document.querySelector('.blog').classList.add('blog-subir')
   }
-  // blog.classList.add('blog-acomodado')
+
   else if(y < 150){
     document.getElementById('slider').classList.remove('desenfoco')
   document.getElementById('slider').classList.add('desenfoco2')

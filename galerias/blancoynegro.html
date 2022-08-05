@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/galerias.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
     <title>Document</title>
 </head>
 <body class="scroll">
@@ -15,8 +17,9 @@
                 <h1>marca</h1>
             </div>
             </a>
+            <div class="menu-hamburguesa"><i class='bx bx-menu'></i></div>
             <div class="header-p">
-                <nav>
+                <nav class="nav">
                     <ul>
                         <li class="p">Galerias
                         <ul class="submenu">
@@ -26,8 +29,8 @@
                             <li><a href="#">blanco y negro</a></li>
                         </ul>
                         </li>
-                        <li class="p pp">info</li>
-                        <li class="p">Contacto</li>
+                        <li class="p pp"><a href="../index.html">Info</a></li>
+                        <li class="p"><a href="../contacto.html">contacto</a></li>
                     </ul>
                 </nav>       
             </div>
@@ -37,28 +40,34 @@
         <div class="galeria-h2"><h2>Galeria blanco y negro</h2></div>
           
         <section id="galeria">
-            <div class="imagen alto"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>
-            <div class="imagen ancho"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>
-            <div class="imagen alto ancho"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>
-            <div class="imagen"><img src="" alt=""></div>  
-            <div class="imagen"><img src="" alt=""></div> 
+            <div class="imagen"><img src="../slider4.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider2.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider3.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider1.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider4.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider3.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider1.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider2.jpg" alt=""></div>
+            <div class="imagen"><img src="../slider4.jpg" alt=""></div>  
+            <div class="imagen"><img src="../slider1.jpg" alt=""></div> 
+            <div class="imagen "><img src="../slider2.jpg" alt=""></div> 
+            <div class="imagen"><img src="../slider3.jpg" alt=""></div> 
+            <div class="imagen "><img src="../slider4.jpg" alt=""></div> 
+            <div class="imagen"><img src="../slider1.jpg" alt=""></div> 
+            <div class="imagen"><img src="../slider2.jpg" alt=""></div> 
         </section>
 
         <section id="contenedor-principal">
             <div id="contenedor-interno">
                 <img id="img-activa" src="/img/img1.jpg" alt="galeria de imagenes">
             </div>
-            <div class="btn-siguiente">
+            <div class="btns">
                 <button class="btn-full"><img src="../expand.png" alt=""></button>
-                <button id="btn-cierra" type="button">x</button>
+                <button id="btn-cierra" type="button"><i class='bx bx-x'></i></button>
+                <button class="auto"><i class='bx bx-chevrons-right'></i></button>
             </div>
-            <div class="btn-retroceder"><button id="btn-retrocede" class="button" type="button">&lt;</button></div>
-            <div class="btn-adelanta"><button id="btn-adelanta" class="button" type="button">&gt;</button></div>
+            <div class="btn-retroceder"><button id="btn-retrocede" class="button" type="button"><i class='bx bx-chevron-left'></i></button></div>
+            <div class="btn-adelanta"><button id="btn-adelanta" class="button" type="button"><i class='bx bx-chevron-right'></i></button></div>
             
             
             
@@ -102,6 +111,7 @@
         </div>
     </footer>
 </div> 
+
 
       <script src='../js/galeria1.js'></script>
 </body>
